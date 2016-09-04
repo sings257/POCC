@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>THE POLITICS OF CLIMATE CHANGE</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.6.7/d3-tip.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.20/topojson.js"></script>
+  <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/emissions.css">
+
+<style>
+
+body{
+margin: 0;
+padding: 0;
+height: 3000px;
+
+}
+
+@keyframes slidy{
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+#scroll{
+  overflow: hidden;
+  z-index: 1;
+/*  position: absolute;*/
+}
+
+#step1{
+/*  width: 1440px;*/
+  height: 802px;
+  background-color: #f2f2f2;
+  position: relative;
+  margin-top: 0px;
+}
+#step2{
+/*  width: 1440px;*/
+  height: 802px;
+  background-color: #f2f2f2;
+  position: relative;
+  margin-top: 802px;
+}
+#step{
+/*  width: 1440px;*/
+  height: 802px;
+  background-color: #f2f2f2;
+  position: relative;
+  margin-top: 802px;
+}
+#scroll-images{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: slidy 20s steps(500) forwards;
+}
+
+
+#scroll-images img{
+  width: 20%;
+  float: left;
+}
+
+#explore{
+
+  margin-left: 665px;
+  margin-right: 665px;
+  margin-top: -180px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 100;
+  
+}
+
+#explore img{
+cursor: pointer;
+
+}
+
+h1{
+  font-family: "Source Sans Pro";
+  color: white;
+  font-size: 1.1em;
+  letter-spacing: 5px;
+}
+
+#intro{
+
+top: 0;
+left: 0;
+}
+
+iframe{
+  width: 1440px;
+  height: 802px;
+  border: none;
+  z-index: 10;
+}
+
+#info2{
+  background-color: #1da8a8;
+  width: 350px;
+  height: 60px;
+  position: relative;
+  z-index: 100;
+  float: right;
+  margin-top: -65px;
+  font-family: "Source Sans Pro";
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  color: white;
+  text-align:center;
+}
+
+
+#pledges{
+  margin-top: -4px;
+
+}
+
+
+</style>
+
+
+</head> 
+<body>
+<div id="intro">
+  <div id = "scroll">
+        <div id="scroll-images">
+
+              <img src="assets/img1.jpg" alt="Image 1">
+              <img src="assets/img2.jpg" alt="Image 2">
+              <img src="assets/img3.jpg" alt="Image 3">
+              <img src="assets/img4.jpg" alt="Image 4">
+              <img src="assets/img5.jpg" alt="Image 4">            
+        </div>
+  </div>
+<div id ="explore" style="visibility:hidden">
+    <h1>EXPLORE</h1>
+    <img src="assets/explore.png" style="margin-left: 20px; width:67%">
+</div>
+  <div id ="step1">
+    <iframe src="emissions.html"></iframe>
+    <div id="info2"><p>Click to view how the countries pledge<br>to reduce CO2 emission</p></div>
+    <iframe id="pledges"src="pledges.html"></iframe>
+  </div>
+  <div id ="step2">
+  </div>
+  <div id ="step3">
+  </div>
+  <!--   <iframe id="twitter" src="twitter.html"></iframe> -->
+   <!--  <iframe src="uspols.html"></iframe> -->
+
+
+
+
+
+
+<script type="text/javascript">
+  function showIt() {
+  document.getElementById("explore").style.visibility = "visible";
+  }
+  setTimeout("showIt()", 22000);
+
+
+  $("#explore").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#step1").offset().top},
+        'slow');
+  });
+
+
+
+  $("#info2").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#pledges").offset().top},
+        'slow');
+  });
+
+
+
+  var fired = false;
+  var fired2 = false;
+
+  window.addEventListener("scroll", function(){
+  if (document.body.scrollTop >= 1900 && fired === false) {
+    // alert('Twitter');
+    var step2 = document.getElementById('step2');
+      var x = document.createElement('iframe');
+      x.setAttribute('id', 'twitter');
+      x.setAttribute('src', 'twitter.html');
+      step2.appendChild(x);
+
+  fired = true;
+
+  }
+  
+  }, true);
+
+  window.addEventListener("scroll", function(){
+  if (document.body.scrollTop >= 2400 && fired2 === false) {
+    // alert('Uspols');
+    var step3 = document.getElementById('step3');
+      var x = document.createElement('iframe');
+      x.setAttribute('id', 'uspols');
+      x.setAttribute('src', 'uspols.html');
+      step3.appendChild(x);
+
+  fired2 = true;
+
+  }
+  
+  }, true);
+
+  
+
+
+
+
+  // function updateFrame(url) {
+  //   //save where you were
+  //   var oldScroll = document.body.scrollTop;
+
+  //   //this moves our body!
+  //   frames[2].location = url;
+
+  //   //move it back
+  //     document.body.scrollTop = oldScroll;
+  // }
+   
+    // document.addEventListener('scroll',function(){
+    //   var t = document.querySelector('#twitter');
+    //   console.log(t.offsetTop + '*' + document.body.scrollTop);  
+    //   if( document.body.scrollTop >= t.offsetTop ){
+    //     for (var i = 0; i < frames.length; i++) { 
+          
+    //       // document.getElementById('bars').click();
+
+    //     // var myiframe = document.createElement('iframe');
+    //     // myiframe.setAttribute('id', 'twitter');
+    //     // myiframe.setAttribute('src', 'twitter.html');
+    //     };
+    //   }
+    // },false);
+  // };
+  
+
+</script>
+
+  <script type="text/javascript" src="js/emissions.js"></script>
+
+
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,166 @@
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	.land {
+	  fill: #cfd4d2;
+	  stroke: #f2f2f2 ;
+	  stroke-width: 1.5px;
+	  z-index: 1;
+	}
+
+	.boundary {
+	  fill: #cfd4d2;
+	  stroke: #f2f2f2 ;
+	  stroke-width: 1.5px;
+	  z-index: 1;
+	}
+
+	#container{
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: #f2f2f2 ;
+		z-index: -1;
+	}
+
+	#years{
+		z-index: 2;
+		position: relative;
+		margin-top: -300 px;
+	}
+
+	text {
+		font-size: 40px;
+		margin-top: 0px;
+		margin-bottom: 10px;
+	}
+
+	#content{
+		
+		margin-left : 50px;
+		margin-top: 400px;
+		position: relative;
+		z-index: 5;
+		float: left;
+
+	}
+
+	#content h1{
+		font-family : "DIN Condensed";
+  		font-weight: 400;
+  		float: left;
+  		letter-spacing: 2px;
+  		font-family : "DIN Condensed";
+	 
+	  color: #05252d;
+	  text-transform: uppercase;
+	  font-size: 2.5em;
+	  line-height: 1.5;
+	}
+
+	#content p{
+		margin-top: 10px;
+        font-family: "Source Sans Pro";
+        color: #05252d;
+        font-size: 0.8em;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 2.5vh;
+        float: left;
+        margin-left: -217px;
+        margin-top: 150px;
+    }
+
+	g{
+		z-index: 10;
+	}
+
+	svg{
+		z-index: -1;
+	}
+
+	circle {
+		stroke: #82193f;
+		stroke-width: 4px;
+		fill: rgba(255, 255, 255, 0.3);
+	}
+
+	circle:hover{
+		fill: rgba(255, 255, 255, 0.5);
+
+	}
+
+
+
+
+	button{
+		top: 0;
+		left: 0;
+		background-color: #1da8a8;
+	/*	background-color: none;*/
+		color: white;
+		font-family: "Source Sans Pro";
+		font-weight: 400;
+		font-size: 1em;
+		letter-spacing: 2px;
+		border: none;
+		border-top: none;
+		border-bottom: none;
+		box-shadow: none;
+		width: 9.089vw;
+		height: 5vh;
+		cursor: pointer;
+		z-index: 10;
+	}
+
+	button:hover{
+		background-color: #0d5d7a;
+		outline: none;
+	}
+
+	button:active{
+		box-shadow: none;
+		background-color: #0d5d7a;
+		outline: none;
+	}
+
+	button:focus{
+		box-shadow: none;
+		background-color: #0d5d7a;
+		outline: none;
+	}
+
+
+	.d3-tip {
+	  line-height: 2;
+	  padding: 12px;
+	  background: #82193f;
+	  color: #cccccc;
+	  font-size: 1.2em;
+	/*  border-radius: 5px;*/
+	  top: 100px;
+	  z-index: 40;
+	  font-family: "Source Sans Pro";
+	  position: fixed;
+	}
+
+	.d3-tip:after {
+	  top: 100%;
+	  left: 50%;
+	  border: solid transparent;
+	  content: " ";
+	  height: 0;
+	  width: 0;
+	  position: absolute;
+	  pointer-events: none;
+	}
+
+	.d3-tip:after {
+	  border-color: rgba(136, 183, 213, 0);
+	  border-top-color: #82193f;
+	  border-width: 10px;
+	  margin-left: -15px;
+	 /* margin-bottom: -100px;*/
+	}
+

@@ -1,0 +1,130 @@
+    body{
+       background-color: #f2f2f2;
+       margin: 0;
+       padding: 0;
+    }
+      #graph{
+      margin-left: 0;
+      }
+      
+      #bars{
+        margin-top: -80px;
+        left: 0;
+       /* position: fixed;*/
+        z-index: 1;
+
+      }
+
+
+      #tooltip {
+          position: absolute;
+          text-align: center;
+          width: 40px;
+          height: auto;
+          padding: 10px;
+          color: white;
+      }
+      #tooltip.hidden {
+          /*display: none;*/
+      }
+      #tooltip p {  
+          margin: 0;
+          font-family: sans-serif;
+          font-size: 1em;
+          line-height: 20px;
+      }
+
+
+      #tweet{
+        margin-top: 20px;
+        font-family: "Source Sans Pro";
+        color: #05252d;
+        font-size: 0.8em;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 2.5vh;
+        
+
+      }
+
+      #info{
+
+      font-family : "DIN Condensed";
+      font-weight: 400;
+      float: left;
+      letter-spacing: 2px;
+      font-family : "DIN Condensed";
+      color: #05252d;
+      text-transform: uppercase;
+      font-size: 2.5em;
+      line-height: 1.5;
+      margin-left: 60px;
+      margin-top: 100px;
+ 
+      }
+
+      .bartext{
+        font-family: "DIN Condensed";
+        fill: #f1f4f2 !important;
+        font-size: 3em;
+        letter-spacing: 3px;
+      /*  position: absolute;*/
+        z-index: 100 !important;
+      }
+
+      #pos{
+        width: 40%;
+        margin-right: 60px; 
+        float: right;
+     
+      /*  background : #cedddd;*/
+      }
+
+      h1{
+        margin-left: 20px;
+        font-family: "DIN Condensed";
+        font-weight: 600;
+        font-size: 2em;
+        letter-spacing: 2px;
+        color: #82193f; 
+      }
+
+      h2{
+        color: #1da8a8;
+        margin-left: 20px;
+        font-family: "DIN Condensed";
+        font-weight: 600;
+        font-size: 2em;
+        letter-spacing: 2px;
+      }
+
+   
+
+      p{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px; 
+        color: #0e1735; 
+      }
+
+      br{
+      content: " ";
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 20px;
+     /* margin-left: -20px;
+      margin-right: -20px;*/
+      border: 0.0005vw;
+      border-color: #e3e5e4;
+      border-radius: 50px;
+      border-spacing: 20px;
+      border-style : solid ;
+      }
+
+      #neg{
+        width: 40%;
+        margin-left: 40px; 
+        float: left;   
+      }
+

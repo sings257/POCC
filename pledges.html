@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Only Human</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="css/pledges.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+
+</head>	
+
+<body>
+
+
+	<div id="container">
+	
+ 	<div><img alt="before" src="assets/map_after.jpg" width="1440" height="802">
+
+ 	</div>
+ 	<div><img alt="after" src="assets/map_before.jpg" width="1440" height="802"></div>
+
+	</div>
+
+
+	<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.13.custom.min.js"></script>
+	<script type="text/javascript" src="js/jquery.beforeafter-1.4.js"></script>
+	
+	<script type="text/javascript">
+
+
+		$(function(){
+		$('#container').beforeAfter();
+		});
+
+		function loadvalue(){
+			document.getElementById("#container")
+		}
+
+		// $('#close').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
+		// $('#lightbox').fadeOut(500);
+
+		// });
+
+
+
+
+
+ 	</script>
+
+
+
+
+
+
+</body>
+</html>

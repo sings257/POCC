@@ -1,0 +1,173 @@
+body {
+/*  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  margin: auto;
+/*  position: relative;*/
+  width: 960px;
+/*  height: 802px;*/
+  background-color: #f2f2f2;
+}
+img{
+  width: 120px;
+  height: auto;
+  margin-top: 320px;
+  float: left;
+  margin-left: -150px;
+}
+
+text {
+  font-family : "DIN Condensed";
+  font-weight: 400;
+  color: #05252d;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+form {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+p{
+  display: inline-block;
+}
+
+svg {
+  margin-top: -15px;
+
+}
+
+#bernie{
+/*  position : relative;*/
+  width: 200px;
+  height: 200px;
+  float : right;
+  margin-right: 10px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+
+}
+
+#obama{
+/*  position : relative;*/
+  float: right;
+  width: 170px;
+  height: 170px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 120px;
+  margin-bottom: 10px;
+
+}
+
+#clinton{
+/*  position: relative;*/
+  float: right;
+  width: 120px;
+  height: 120px;
+  margin-right: -100px;
+  margin-top: 350px;
+  margin-bottom: 10px;
+}
+
+#trump {
+/*  position: relative;*/
+  float: right;
+  width: 150px;
+  height: 150px;
+  margin-right: -250px;
+  margin-top: 540px;
+  margin-bottom: 10px;
+}
+
+#cruz {
+/*  position: relative;*/
+  float: right;
+  width: 200px;
+  height: 200px;
+  margin-right: -370px;
+  margin-top: 300px;
+  margin-bottom: 10px;
+}
+
+#palin {
+/*  position: relative;*/
+  float: right;
+  width: 200px;
+  height: 200px;
+  margin-right: -530px;
+  margin-top: 500px;
+  margin-bottom: 10px;
+}
+
+.tooltip{
+  position: absolute; 
+  float: left;
+  width: 500px; 
+  height: 150px; 
+/*  font-family: "Gotham";  */ 
+  background-color: #e0e2e1; 
+  margin-left: -150px;
+  margin-top: 300px;           
+  display: none; 
+
+}
+
+#tip{
+  padding: 25px;
+  font-family: "Source Sans Pro";
+  letter-spacing: 1px;
+  font-size: 17px;
+  color: #0e1735;
+  line-height: 3vh;
+  margin-top: 50px;
+}
+
+
+#infor h1{
+  font-family : "DIN Condensed";
+  font-weight: 400;
+  color: #05252d;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  margin-left: -150px;
+  margin-top: 50px;
+  padding-top: 10px;
+  line-height: 1.5;
+}
+
+#infor p{
+  font-family : "Source Sans Pro";
+  color: #05252d;
+  font-size: 1.1em;
+  font-weight: 300;
+  margin-left: -150px;
+  margin-top: -20px;
+  letter-spacing: 1px;
+
+}
+
+/*.tooltip:after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}*/
+
+/*.tooltip:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: black;
+  border-width: 15px;
+  margin-left: -200px;
+  margin-top: -90px;
+}*/
+
+
+
+
+
